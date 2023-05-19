@@ -1,0 +1,15 @@
+server:
+  port: 8081
+#spring boot application config
+spring:
+  application:
+    name: service-card-payment
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/testsdb
+#custom properties
+card-payment:
+  cipher: AES/CBC/PKCS5PADDING
+  key: mySecureKey$-890
+  vector: myInitVector#450
+
